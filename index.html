@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=ai-legible&utm_source=comment&utm_medium=referral&utm_id=667cadd4-0e71-47a4-889c-17f930c2bbbb
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+    <meta name="hosting-provider" content="Netlify">
+    <meta name="netlify-deploy" content="https://netlify.new/?utm_campaign=ai-legible&amp;utm_source=meta&amp;utm_medium=referral&amp;utm_id=667cadd4-0e71-47a4-889c-17f930c2bbbb">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Vyapti Architects is an architecture firm in Dehradun, Uttarakhand, turning visions into thoughtfully designed spaces through conceptual design, architectural planning, and quality-focused execution." />
+    <meta name="keywords" content="architects in Dehradun, architecture firm in Dehradun, architects in Uttarakhand, residential architects Dehradun, commercial architects Dehradun, Vyapti Architects" />
+    <title>Vyapti Architects | Architecture Firm in Dehradun</title>
+    <link rel="icon" href="assets/images/blueprint.png">
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="assets/css/aos.css" />
+    <!-- Swiper -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <!-- ===================== CURSOR ===================== -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+    <!-- ===================== PRELOADER ===================== -->
+    <div id="preloader">
+        <div class="preloader-logo">VYAPTI</div>
+        <div class="preloader-tagline">Architecture • Design • Spaces</div>
+        <div class="preloader-bar-wrap">
+            <div class="preloader-bar"></div>
+        </div>
+    </div>
+
+    <!-- ===================== SOCIAL SIDEBAR ===================== -->
+    <div class="social-sidebar">
+        <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="#" title="Behance"><i class="bi bi-behance"></i></a>
+        <a href="#" title="Pinterest"><i class="bi bi-pinterest"></i></a>
+    </div>
+
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar navbar-expand-lg" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">VYAPTI</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation" onclick="this.querySelector('.hamburger').classList.toggle('open')">
+        <span class="hamburger">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+                <ul class="navbar-nav gap-1">
+                    <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#process">Process</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="hero">
+        <div class="container hero-content">
+            <div class="row">
+                <div class="col-lg-9 col-xl-8">
+                    <div class="hero-eyebrow" data-aos="fade-right" data-aos-delay="200">ARCHITECTURE • DESIGN • SPACES</div>
+                    <h1 class="hero-title" data-aos="fade-up" data-aos-delay="300">
+                        Turning Your Vision<br />Into <em>Reality</em>
+                    </h1>
+                    <p class="hero-sub" data-aos="fade-up" data-aos-delay="450">
+                        We create architecture that transcends function — spaces where art, structure, and human experience converge into something timeless.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3" data-aos="fade-up" data-aos-delay="550">
+                        <a href="#portfolio" class="btn-gold">
+              <span>Explore Our Work</span>
+              <span><i class="bi bi-arrow-right"></i></span>
+            </a>
+                        <a href="#contact" class="btn-outline-light-custom">
+              <span>Start a Project</span>
+            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="section-pad">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <!-- Image -->
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800">
+                    <div class="about-img-wrap">
+                        <img src="assets/images/unsplash_1511818966892-d7d671e672a2_6bc8f8.jpg" alt="Architecture studio interior" loading="lazy" />
+                        <div class="about-img-accent"></div>
+                    </div>
+                </div>
+                <!-- Content -->
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800" data-aos-delay="150">
+                    <div class="section-eyebrow">About Vyapti Architects</div>
+                    <h2 class="section-title">From Conceptual Sketches<br />to <em>Built Spaces</em></h2>
+                    <div class="section-divider"></div>
+                    <p class="text-body-custom mb-3">
+                        At Vyapti Architects, we turn your dream into reality. Our approach begins with understanding your vision and translating it into thoughtful architectural design. From the first conceptual sketch through to the final built space, we focus on creating environments that are functional, distinctive, and lasting.
+                    </p>
+                    <p class="text-body-custom mb-4" hidden>
+                        From intimate residences to landmark civic buildings, our team of 40+ architects and designers brings the same relentless attention to detail — and the same hunger for beauty — to every project we undertake.
+                    </p>
+                    <p class="text-body-custom mb-4">
+                        Every project begins with an idea. We transform that idea into a considered spatial experience through careful planning, architectural thinking, material selection, and attention to detail. Our aim is simple: to create spaces that not only look good, but also work beautifully for the people who use them.
+                    </p>
+                    <p class="text-body-custom mb-4"><strong>Thoughtful design. Lasting quality. Spaces that inspire.</strong></p>
+                    <!-- Stats Row -->
+                    <div class="row g-0 mt-4 pt-3 border-top" style="border-color: var(--border) !important;">
+                        <div class="col-6 stat-item">
+                            <div class="stat-number"><span class="counter" data-target="5">0</span><span class="suffix">.0</span>
+                            </div>
+                            <div class="stat-label">Google Rating</div>
+                        </div>
+                        <div class="col-6 stat-item stat-divider">
+                            <div class="stat-number"><span class="counter" data-target="12">0</span>
+                            </div>
+                            <div class="stat-label">Google Reviews</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section id="services" class="section-pad">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-6">
+                    <div class="section-eyebrow justify-content-center">What We Do</div>
+                    <h2 class="section-title">Our <em>Expertise</em></h2>
+                    <p class="text-body-custom">From concept to completion, we offer a comprehensive suite of architectural and design services tailored to each unique vision.</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <!-- Service items -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-card h-100">
+                        <span class="service-num">01</span>
+                        <div class="service-icon"><i class="bi bi-house-door"></i></div>
+                        <div class="service-title">Architectural Design</div>
+                        <p class="service-text">Custom homes and multi-family residences designed around how you live — functional, beautiful, and deeply personal.</p>
+                        <a class='btn-gold' href='/residential-architecture'>
+              <span>View More</span>
+              <span><i class="bi bi-arrow-right"></i></span>
+            </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
+                    <div class="service-card h-100">
+                        <span class="service-num">02</span>
+                        <div class="service-icon"><i class="bi bi-building"></i></div>
+                        <div class="service-title">Residential Architecture</div>
+                        <p class="service-text">Offices, retail spaces, and mixed-use developments that elevate the human experience and reinforce brand identity.</p>
+                        <a class='btn-gold' href='/commercial'>
+              <span>View More</span>
+              <span><i class="bi bi-arrow-right"></i></span>
+            </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="160">
+                    <div class="service-card h-100">
+                        <span class="service-num">03</span>
+                        <div class="service-icon"><i class="bi bi-layout-text-window"></i></div>
+                        <div class="service-title">Commercial Architecture</div>
+                        <p class="service-text">Cohesive, curated interiors where every material, proportion, and detail serves the larger architectural vision.</p>
+                        <a class='btn-gold' href='/interior-planning'>
+              <span>View More</span>
+              <span><i class="bi bi-arrow-right"></i></span>
+            </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-card h-100">
+                        <span class="service-num">04</span>
+                        <div class="service-icon"><i class="bi bi-map"></i></div>
+                        <div class="service-title">Interior Design</div>
+                        <p class="service-text">Master planning and urban design strategies that create vibrant, sustainable communities at every scale.</p>
+                        <a class='btn-gold' href='/urban-planning'>
+              <span>View More</span>
+              <span><i class="bi bi-arrow-right"></i></span>
+            </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
+                    <div class="service-card h-100">
+                        <span class="service-num">05</span>
+                        <div class="service-icon"><i class="bi bi-tools"></i></div>
+                        <div class="service-title">Space Planning</div>
+                        <p class="service-text">Breathing new life into existing structures while honoring their history and elevating their future potential.</p>
+                        <a class='btn-gold' href='/renovation'>
+              <span>View More</span>
+              <span><i class="bi bi-arrow-right"></i></span>
+            </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="160">
+                    <div class="service-card h-100">
+                        <span class="service-num">06</span>
+                        <div class="service-icon"><i class="bi bi-tree"></i></div>
+                        <div class="service-title">Design Development</div>
+                        <p class="service-text">Outdoor environments that integrate seamlessly with architecture, creating a continuous dialogue between built and natural form.</p>
+                        <a class='btn-gold' href='/landscape-design'>
+              <span>View More</span>
+              <span><i class="bi bi-arrow-right"></i></span>
+            </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PORTFOLIO ===================== -->
+    <section id="portfolio" class="section-pad">
+        <div class="container-fluid px-lg-5">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-6">
+                    <div class="section-eyebrow justify-content-center" data-aos="fade-up">Selected Work</div>
+                    <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Our <em>Projects</em></h2>
+                </div>
+            </div>
+            <!-- Filter buttons -->
+            <div class="filter-btns" data-aos="fade-up" data-aos-delay="200">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="residential">Residential</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+                <button class="filter-btn" data-filter="interior">Interior</button>
+            </div>
+            <!-- Grid -->
+            <div class="portfolio-grid" id="portfolioGrid">
+                <div class="portfolio-item tall" data-cat="residential" data-aos="fade-up">
+                    <img src="assets/images/unsplash_1600585154340-be6161a56a0c_6bc8f8.jpg" alt="Residential project" loading="lazy" />
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-cat">Residential</div>
+                        <div class="portfolio-name">Residential Project</div>
+                    </div>
+                    <button class="portfolio-link" onclick="openLightbox('assets/images/unsplash_1600585154340-be6161a56a0c_831f2c.jpg')"><i
+              class="bi bi-zoom-in"></i></button>
+                </div>
+                <div class="portfolio-item" data-cat="commercial" data-aos="fade-up" data-aos-delay="80">
+                    <img src="assets/images/unsplash_1486325212027-8081e485255e_6bc8f8.jpg" alt="Commercial project" loading="lazy" />
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-cat">Commercial</div>
+                        <div class="portfolio-name">Commercial Project</div>
+                    </div>
+                    <button class="portfolio-link" onclick="openLightbox('assets/images/unsplash_1486325212027-8081e485255e_831f2c.jpg')"><i
+              class="bi bi-zoom-in"></i></button>
+                </div>
+                <div class="portfolio-item" data-cat="interior" data-aos="fade-up" data-aos-delay="160">
+                    <img src="assets/images/unsplash_1618221195710-dd6b41faaea6_6bc8f8.jpg" alt="Interior project" loading="lazy" />
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-cat">Interior</div>
+                        <div class="portfolio-name">Interior Project</div>
+                    </div>
+                    <button class="portfolio-link" onclick="openLightbox('assets/images/unsplash_1618221195710-dd6b41faaea6_831f2c.jpg')"><i
+              class="bi bi-zoom-in"></i></button>
+                </div>
+                <div class="portfolio-item" data-cat="residential" data-aos="fade-up">
+                    <img src="assets/images/unsplash_1580587771525-78b9dba3b914_6bc8f8.jpg" alt="Residential project" loading="lazy" />
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-cat">Residential</div>
+                        <div class="portfolio-name">Residential Project</div>
+                    </div>
+                    <button class="portfolio-link" onclick="openLightbox('assets/images/unsplash_1580587771525-78b9dba3b914_831f2c.jpg')"><i
+              class="bi bi-zoom-in"></i></button>
+                </div>
+                <div class="portfolio-item" data-cat="commercial" data-aos="fade-up" data-aos-delay="80">
+                    <img src="assets/images/unsplash_1504307651254-35680f356dfd_6bc8f8.jpg" alt="Commercial project" loading="lazy" />
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-cat">Commercial</div>
+                        <div class="portfolio-name">Commercial Project</div>
+                    </div>
+                    <button class="portfolio-link" onclick="openLightbox('assets/images/unsplash_1504307651254-35680f356dfd_831f2c.jpg')"><i
+              class="bi bi-zoom-in"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PROCESS ===================== -->
+    <section id="process" class="section-pad">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-6">
+                    <div class="section-eyebrow justify-content-center" data-aos="fade-up">How We Work</div>
+                    <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">From Vision to <em>Reality</em></h2>
+                </div>
+            </div>
+            <div class="process-timeline position-relative">
+                <div class="process-step" data-aos="fade-left">
+                    <div class="process-num">01</div>
+                    <div class="process-step-inner">
+                        <div class="process-step-title">Understand</div>
+                        <p class="process-step-text">We begin with deep listening — understanding your vision, your life, and the full context of the site. Every project starts with a conversation that becomes the foundation for everything that follows.</p>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-right">
+                    <div class="process-num">02</div>
+                    <div class="process-step-inner">
+                        <div class="process-step-title">Conceptualize</div>
+                        <p class="process-step-text">Our design team develops multiple concepts, exploring spatial possibilities through sketches, models, and renders. We refine until a singular, powerful idea emerges from the dialogue.
+                        </p>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-left">
+                    <div class="process-num">03</div>
+                    <div class="process-step-inner">
+                        <div class="process-step-title">Develop</div>
+                        <p class="process-step-text">With the concept approved, we develop detailed technical drawings, specifications, and documentation — the precise blueprint that transforms vision into buildable reality.
+                        </p>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-right">
+                    <div class="process-num">04</div>
+                    <div class="process-step-inner">
+                        <div class="process-step-title">Build</div>
+                        <p class="process-step-text">We remain deeply engaged through construction, managing the build to ensure every detail meets our exacting standards. We don't step back until the space is truly complete.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS (FIXED OVERLAP) ===================== -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-6">
+                    <div class="section-eyebrow justify-content-center" data-aos="fade-up">Google Reviews</div>
+                    <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">What Our Clients <em>Say</em></h2>
+                </div>
+            </div>
+            <div class="swiper testimonialSwiper" data-aos="fade-up" data-aos-delay="200">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial-slide">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <div class="testimonial-text">"We are very happy with the design and overall experience."</div>
+                            <div class="testimonial-author">
+                                <img src="assets/images/unsplash_1494790108377-be9c29b29330_fab751.jpg" class="testimonial-avatar" alt="Google review client" />
+                                <div>
+                                    <div class="testimonial-name">Abhishek Negi</div>
+                                    <div class="testimonial-role">Google Review</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-slide">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <div class="testimonial-text">"We couldn’t be happier with the results!"</div>
+                            <div class="testimonial-author">
+                                <img src="assets/images/unsplash_1507003211169-0a1dd7228f2d_fab751.jpg" class="testimonial-avatar" alt="Marc Beaumont" />
+                                <div>
+                                    <div class="testimonial-name">Abhishek Bhandari</div>
+                                    <div class="testimonial-role">Google Review</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial-slide">
+                            <div class="testimonial-stars">★★★★★</div>
+                            <div class="testimonial-text">"Thank you so much for designing our home so beautifully."</div>
+                            <div class="testimonial-author">
+                                <img src="assets/images/unsplash_1534528741775-53994a69daeb_fab751.jpg" class="testimonial-avatar" alt="Elena Vasari" />
+                                <div>
+                                    <div class="testimonial-name">Vishakha Bhandari</div>
+                                    <div class="testimonial-role">Google Review</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination mt-4 position-relative"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== STATS ===================== -->
+    <section id="stats">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="0">
+                    <div class="stat-box">
+                        <div class="num"><span class="counter" data-target="250">0</span><span class="plus">+</span></div>
+                        <div class="lbl">Projects Delivered</div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-box">
+                        <div class="num"><span class="counter" data-target="20">0</span><span class="plus">+</span></div>
+                        <div class="lbl">Years Experience</div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-box">
+                        <div class="num"><span class="counter" data-target="150">0</span><span class="plus">+</span></div>
+                        <div class="lbl">Satisfied Clients</div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-box">
+                        <div class="num"><span class="counter" data-target="12">0</span></div>
+                        <div class="lbl lbl-accent">International Awards</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact" class="section-pad">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-lg-6">
+                    <div class="section-eyebrow justify-content-center" data-aos="fade-up">Get In Touch</div>
+                    <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Let's Create Your <em>Space</em></h2>
+                    <p class="text-body-custom" data-aos="fade-up" data-aos-delay="200">Ready to create something extraordinary? We'd love to hear about your project.</p>
+                </div>
+            </div>
+            <div class="row g-5">
+                <!-- Contact Info -->
+                <div class="col-lg-4" data-aos="fade-right">
+                    <div class="contact-detail">
+                        <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
+                        <div>
+                            <div class="contact-label">Visit Us</div>
+                            <div class="contact-value"><a href="https://www.google.com/maps/place/Vyapti+Architects/@30.3341996,78.060566,17z/data=!3m1!4b1!4m6!3m5!1s0x39092999dec6fa71:0xe1b89f8ca41dfd46!8m2!3d30.3341996!4d78.0631409!16s%2Fg%2F11n3m4w8t2!5m1!1e1?entry=ttu&amp;g_ep=EgoyMDI2MDkxNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">DL Rd, Kandholi, Chironwali, Dehradun, Uttarakhand 248001, India</a><br /><a href="https://www.google.com/maps/place/Vyapti+Architects/@30.3341996,78.060566,17z/data=!3m1!4b1!4m6!3m5!1s0x39092999dec6fa71:0xe1b89f8ca41dfd46!8m2!3d30.3341996!4d78.0631409!16s%2Fg%2F11n3m4w8t2!5m1!1e1?entry=ttu&amp;g_ep=EgoyMDI2MDkxNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">Get Directions</a></div>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon"><i class="bi bi-telephone"></i></div>
+                        <div>
+                            <div class="contact-label">Call Us</div>
+                            <div class="contact-value">+91 75057 43308</div>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon"><i class="bi bi-envelope"></i></div>
+                        <div>
+                            <div class="contact-label">Email</div>
+                            <div class="contact-value">Email details available on request</div>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon"><i class="bi bi-clock"></i></div>
+                        <div>
+                            <div class="contact-label">Hours</div>
+                            <div class="contact-value">Monday–Saturday: 9:30 AM–6:00 PM</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Form -->
+                <div class="col-lg-8" data-aos="fade-left" data-aos-delay="150">
+                    <form id="contactForm" novalidate>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Name" required />
+                                    <label for="name">Full Name</label>
+                                    <div class="invalid-feedback" style="font-size:0.75rem; letter-spacing:0.05em;">Please enter your name.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Email" required />
+                                    <label for="email">Email Address</label>
+                                    <div class="invalid-feedback" style="font-size:0.75rem;">Please enter a valid email.</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="phone" placeholder="Phone" />
+                                    <label for="phone">Phone (Optional)</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <select class="form-control" id="service" style="padding-top:1.4rem; font-size:0.85rem; font-family:var(--font-body);">
+                    <option value="">Select a service</option>
+                    <option>Residential Architecture</option>
+                    <option>Commercial Design</option>
+                    <option>Interior Planning</option>
+                    <option>Urban Planning</option>
+                    <option>Renovation</option>
+                    <option>Landscape Design</option>
+                  </select>
+                                    <label for="service">Service</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="message" placeholder="Message" style="height:120px; resize:none;" required></textarea>
+                                    <label for="message">Your Message</label>
+                                    <div class="invalid-feedback" style="font-size:0.75rem;">Please include a message.</div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn-gold">
+                  <span>Send Enquiry</span>
+                  <span><i class="bi bi-send"></i></span>
+                </button>
+                                <div id="formSuccess" class="mt-3" style="display:none; font-size:0.8rem; letter-spacing:0.1em; color:var(--gold);">
+                                    ✓ Your message has been sent. We'll be in touch shortly.
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Map -->
+            <div class="row mt-5">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="map-wrap">
+                        <iframe title="Vyapti Architects location" src="https://www.google.com/maps?q=Vyapti%20Architects%2C%2030.3341996%2C78.0631409&amp;z=17&amp;output=embed"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ===================== FOOTER ===================== -->
+    <footer>
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="footer-brand">VYAPTI ARCHITECTS</div>
+                    <div class="footer-tagline">Architecture • Design • Spaces</div>
+                    <p class="footer-desc">Turning your vision into reality through thoughtful design, lasting quality, and spaces that inspire.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                        <a href="#"><i class="bi bi-behance"></i></a>
+                        <a href="#"><i class="bi bi-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <div class="footer-heading">Navigate</div>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#process">Process</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-lg-2">
+                    <div class="footer-heading">Services</div>
+                    <ul class="footer-links">
+                        <li><a href="#services">Architectural Design</a></li>
+                        <li><a href="#services">Residential</a></li>
+                        <li><a href="#services">Commercial</a></li>
+                        <li><a href="#services">Interior Design</a></li>
+                        <li><a href="#services">Space Planning</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-heading">Contact</div>
+                    <p class="footer-desc mb-3" style="max-width:none;"><a href="https://www.google.com/maps/place/Vyapti+Architects/@30.3341996,78.060566,17z/data=!3m1!4b1!4m6!3m5!1s0x39092999dec6fa71:0xe1b89f8ca41dfd46!8m2!3d30.3341996!4d78.0631409!16s%2Fg%2F11n3m4w8t2!5m1!1e1?entry=ttu&amp;g_ep=EgoyMDI2MDkxNS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">DL Rd, Kandholi, Chironwali, Dehradun, Uttarakhand 248001</a></p>
+                    <p class="footer-desc mb-0"><a href="tel:+917505743308">+91 75057 43308</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Vyapti Architects. All rights reserved.</p>
+                <div>
+                    <a href="#contact">Dehradun, Uttarakhand</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ===================== LIGHTBOX ===================== -->
+    <div class="lightbox-overlay" id="lightbox">
+        <button class="lightbox-close" onclick="closeLightbox()"><i class="bi bi-x-lg"></i></button>
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" class="lightbox-img" id="lightboxImg" alt="Expanded project view" />
+    </div>
+    <!-- ===================== SCROLL TO TOP ===================== -->
+    <button id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <span class="arrow-up"></span>
+  </button>
+    <!-- Scripts -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
